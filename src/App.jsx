@@ -56,7 +56,7 @@ export default function App() {
 
             alert("Feedback submitted successfully!");
 
-            setStep(1);
+            setStep(5);
 
         } catch (error) {
 
@@ -317,6 +317,30 @@ export default function App() {
                             Submit Feedback
                         </button>
                     </>
+                )}
+                {step === 5 && (
+                    <div style={{ textAlign: "center" }}>
+
+                        <h1 style={{ color: "#a855f7", fontSize: "36px" }}>
+                            🎉 Thank You!
+                        </h1>
+
+                        <p style={{ fontSize: "18px", marginTop: "10px" }}>
+                            Your feedback has been recorded successfully.
+                        </p>
+
+                        <p style={{ opacity: 0.7 }}>
+                            We appreciate your contribution to JTECHTRIX 7.0.
+                        </p>
+
+                        <button
+                            style={buttonStyle}
+                            onClick={() => setStep(1)}
+                        >
+                            Submit Another Feedback
+                        </button>
+
+                    </div>
                 )}
             </div>
 
