@@ -49,7 +49,7 @@ export default function App() {
 
         try {
 
-            await fetch("YOUR_SCRIPT_URL_HERE", {
+            await fetch("https://script.google.com/macros/s/AKfycbyhZbTpMalvyWckuFuD5uxQzaUIbGc1HO8MvxCwI8I-glNepuC2yEYYkZpbijcC8uqH/exec", {
                 method: "POST",
                 mode: "no-cors",
                 headers: {
